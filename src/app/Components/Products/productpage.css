@@ -1,0 +1,209 @@
+:root {
+  --dark-blue: #31353d;
+  --green: #9bb6aa;
+}
+
+.Productsmain {
+  background: url('/main-bg.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.productsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.ProductsTitle {
+  text-align: center;
+}
+
+.ProductsTitle h2 {
+  color: #1792c8;
+  font-weight: 700;
+}
+
+.product {
+  background: #fff;
+  width: 300px;
+  position: relative;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+.product:hover .productSidebar {
+  right: 0;
+}
+
+.product figure {
+  margin: 0;
+  line-height: 0;
+}
+
+.product .productImage {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px 12px 0 0;
+}
+
+.product .productDescription {
+  background: #fff;
+  display: flex;
+  padding: 15px;
+}
+
+.product .productDescription .info {
+  flex: 3;
+  color: #aaa;
+}
+
+.product .productDescription .info h1 {
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: var(--dark-blue);
+}
+
+.product .productDescription .info p {
+  font-size: 0.85em;
+  line-height: 1.3em;
+  margin-bottom: 0;
+}
+
+.product .productDescription .fixedLIneheight {
+  line-height: 1.5;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.product .productDescription .fixedLIneheight::-webkit-scrollbar {
+  display: none;
+}
+
+.product .productDescription .price {
+  flex: 1;
+  color: var(--green);
+  font-size: 2em;
+  position: relative;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.product .productDescription .price::before {
+  content: '$';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  font-size: 0.35em;
+}
+
+.product .productSidebar {
+  background: var(--dark-blue);
+  width: 60px;
+  position: absolute;
+  top: 0;
+  right: -70px;
+  z-index: 10;
+  transition: right 0.3s ease;
+  border-radius: 0 2px 2px 0;
+  overflow: hidden;
+}
+
+.product .productSidebar button {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 0.9em;
+  font-size: 0.8em;
+  width: 50px;
+  height: 50px;
+  transition: all 0.4s ease;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  text-align: left;
+}
+
+.product .productSidebar button span {
+  opacity: 0;
+  margin-left: 30px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+/* .product .productSidebar button:hover {
+  width: 130px;
+  background-color: var(--green);
+} */
+
+.product .productSidebar button:hover span {
+  opacity: 1;
+}
+
+.product .productSidebar .buy {
+  background-image: url('/youtube.png');
+  background-size: 70%;
+}
+
+.product .productSidebar .infoBtn {
+  background-image: url('/whatsapp.png');
+  background-size: 70%;
+}
+
+.product .productSidebar .size {
+  background-image: url('/gmail.png');
+  background-size: 70%;
+}
+
+.product .productSidebar .colors {
+  background-image: url('/icons/colors.png');
+}
+
+.product .productSidebar .colors span {
+  display: flex;
+  gap: 5px;
+  margin-left: 40px;
+  align-items: center;
+}
+
+.product .productSidebar .colors:hover {
+  width: 130px;
+}
+
+.product .productSidebar .colors .color {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.product .productSidebar .colors .color:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.product .productSidebar .colors .color.black {
+  background: #000;
+  border-color: #555;
+}
+
+.product .productSidebar .colors .color.white {
+  background: #fff;
+  border-color: #e5e5e5;
+}
+
+.product .productSidebar .colors .color.red {
+  background: #EA1535;
+  border-color: #EF566D;
+}

@@ -1,0 +1,33 @@
+/* custom.css */
+.btn-custom {
+  background-color: #fff;
+  color: #1891c8;
+  border: 1px solid #1891c8;
+    padding: 10px 20px;
+}
+.ExploreSec{
+  font-weight: 700;
+}
+
+
+.btn-custom:hover {
+  background-color: #0f6b96;
+  color: white;
+  transform:scale(1.1);
+  transition:0.3s ease;
+}
+@media (max-width:768px){
+  .discoverbtn{
+      width:100%;
+  }
+  .ExploreSec{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .ExploreSec p{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 16px;
+  }
+}

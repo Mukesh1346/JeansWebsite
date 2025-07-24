@@ -1,0 +1,42 @@
+.DiscountMainSec{
+    background-image: url("/right.webp");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding:70px 0;
+    border: 1px solid rgb(234, 224, 224);
+    border-radius: 10px;
+}
+.DiscountTitlePara1{
+    font-size: 20px;
+    color:cornflowerblue;
+}   
+.btn-custom {
+    color: #1891c8;
+    background-color: #fff;
+    border: 1px solid #1891c8;
+    padding: 10px 20px;
+  }
+
+@media (max-width: 768px) {
+    .DiscountMainSec {
+        background-image: url(/right.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid #eae0e0;
+        border-radius: 10px;
+        padding: 70px 0;
+    }
+   .DiscountTitlePara1{
+    color:black;
+    font-weight: 600;
+   }
+
+}
+
+
+
+
+
+

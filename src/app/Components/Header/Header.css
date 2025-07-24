@@ -1,0 +1,111 @@
+.bgText {
+  font-size: 125px;
+  font-weight: 900;
+  color: #e1dede;
+  line-height: 0.85;
+  z-index: 1;
+  position: relative;
+  animation: fadeInText 1s ease-in forwards;
+}
+.Header-main{
+  padding-top:20px ;
+}
+
+.overlayImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  animation: dropIn 1.2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -200px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.HeaderRightSec {
+  text-align: left;
+  height: 400px;
+}
+
+.HeaderMainTitle {
+  line-height: 0.8;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.HeaderMainSubtitle {
+  color: rgb(46, 137, 202);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+
+
+.btn-custom {
+  color: #1891c8;
+  background-color: #fff;
+  border: 1px solid #1891c8;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .HeaderRightSec {
+    text-align: left;
+    height: 260px;
+    margin: 0 !important; /* optional: force override if necessary */
+    padding: 0;            /* optional: reset padding if required */
+  }
+  .HeaderMainTitle {
+    line-height: 0.8;
+    font-size: 40px;
+    font-weight: 700;
+    margin:5px !important ;
+  }
+
+
+
+}
+
+
+
+@media (max-width: 567px) {
+.one{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.overlayImg{
+  left:30%;
+  height:96%;
+
+}
+.HeaderRightSec {
+  text-align: left;
+  height: 260px;
+  margin:0px;
+}
+
+}

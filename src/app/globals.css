@@ -19,9 +19,10 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-montserrat), sans-serif;
 }
 
 * {
@@ -33,6 +34,69 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Regular Montserrat */
+.montserrat-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic Montserrat */
+.montserrat-italic {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.main-product-image {
+  transition: transform 0.3s ease;
+}
+.main-product-image:hover {
+  transform: scale(1.03);
+}
+
+.thumb-image {
+  transition: 0.2s ease;
+}
+.thumb-image:hover {
+  transform: scale(1.1);
+  border-color: #ff4d6d !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Roboto Class */
+.roboto-text {
+  font-family: var(--font-roboto), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

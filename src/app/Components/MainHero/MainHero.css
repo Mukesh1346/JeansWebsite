@@ -1,0 +1,53 @@
+.mainhero{
+
+    /* height:70vh; */
+    background-color: #1891c8;
+    background-image: url('../../Images/AutoHorizontal.png');
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+    overflow:hidden;
+
+}
+
+.rotate-360 {
+  animation: rotate360 10s linear infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* custom.css */
+.btn-custom {
+  background-color: #fff;
+  color: #1891c8;
+  border: 1px solid #1891c8;
+    padding: 10px 20px;
+}
+
+.btn-custom:hover {
+  background-color: #0f6b96;
+  color: white;
+  transform:scale(1.1);
+  transition:0.3s ease;
+  border: 1px solid #fff;
+}
+.mainhero .row .img1 p{
+  font-size:13px;
+}
+.mainhero .row .img1 {
+margin-left:155px;
+}
+.mainhero .row .img img {
+  margin-left: -100px;
+  color: transparent;
+ }

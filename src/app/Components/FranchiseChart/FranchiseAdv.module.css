@@ -1,0 +1,91 @@
+/* components/Franchise.module.css */
+
+.FranchiseAdvantageSection {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.FranchiseHeading {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bolder;
+  color: #001e3c;
+  margin-bottom: 40px;
+}
+
+.FranchiseBoxContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.FranchiseBoxContainer1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.FranchiseBoxLeft {
+  flex: 1;
+  min-width: 260px;
+}
+
+.FranchiseBoxLeft h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0d47a1;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.FranchiseBoxLeft p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.FranchiseBoxRight {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  gap: 20px;
+}
+
+.FranchisePoint {
+  background-color: #e3f2fd;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.FranchiseIcon {
+  font-size: 24px;
+  color: #0d47a1;
+  margin-bottom: 5px;
+}
+
+.FranchiseImageRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FranchiseChartImage {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}

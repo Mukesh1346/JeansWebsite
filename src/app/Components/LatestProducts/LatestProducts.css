@@ -169,8 +169,9 @@
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background: white;
+  color: white;
   border: none;
+  background: #1792c8;
   border-radius:20%;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   font-size: 40px;
@@ -182,10 +183,6 @@
   transition: all 0.3s;
 }
 
-.carousel-nav:hover {
-  background: #1792c8;
-  color: white;
-}
 
 .carousel-nav.prev {
   left: 10px;

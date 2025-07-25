@@ -1,0 +1,88 @@
+.franchiseSection {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #004aad, #00d4ff);
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  background-color: #dbeafe;
+  padding: 1rem;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.tiersWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.tierCard {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border-style: inset;
+
+  max-width: 280px;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tierCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.price span {
+  font-size: 2rem;
+}
+
+.b2cAddon {
+  background-color: #1e40af;
+  color: white;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.addonPrice {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.b2cDescription {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  max-width: 750px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}

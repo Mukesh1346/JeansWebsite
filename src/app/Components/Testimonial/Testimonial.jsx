@@ -2,26 +2,30 @@
 import React from 'react';
 import './Testimonial.css';
 import Image from 'next/image';
+import pic1 from  '@/app/Images/user1.jpeg'
+import pic2 from  '@/app/Images/user2.jpeg'
+import pic3 from  '@/app/Images/user3.jpeg'
+
 
 const testimonials = [
   {
     name: 'Aarav Mehta',
     title: 'Fashion Blogger',
-    image: '/user1.jpeg',
+    image: pic1,
     message:
       'The jeans I bought from this site are simply amazing! Perfect fit, great material, and top-notch style. Highly recommended!',
   },
   {
     name: 'Priya Sharma',
     title: 'Model & Influencer',
-    image: '/user2.jpeg',
+    image: pic2,
     message:
       'Absolutely love the denim collection here. It’s trendy, comfy, and affordable. My go-to jeans store now!',
   },
   {
     name: 'Rohit Verma',
     title: 'Creative Director',
-    image: '/user3.jpeg',
+    image: pic3,
     message:
       'I’ve tried many brands, but the quality and comfort of these jeans stand out. Fast delivery and premium feel!',
   },

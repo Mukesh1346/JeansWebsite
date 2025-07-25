@@ -1,0 +1,140 @@
+/* === PURPOSE MAIN SECTION === */
+.purposeMainSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    margin: 50px 0;
+    padding: 0 20px;
+  }
+  
+  /* === HEADING SECTION === */
+  .PurposeHeading {
+    text-align: center;
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+  
+  .PurposeHeading h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1891c8;
+  }
+  
+  .PurposeHeading p {
+    padding: 0px 40px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* === CARD SECTION === */
+  .cardSection {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .cardSection:hover {
+    transform: translateY(-5px);
+  }
+  
+  .PurposeImg {
+    background: #1891c8;
+    border-radius: 50%;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .cardSection h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 12px;
+    color: #333;
+  }
+  
+  .cardSection h3 {
+    font-size: 22px;
+    color: #1891c8;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .cardSection p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  /* === RESPONSIVE BREAKPOINTS === */
+  
+  /* Tablets */
+  @media (max-width: 992px) {
+    .cardSection {
+      width: 45%;
+    }
+  
+    .PurposeHeading h3 {
+      font-size: 28px;
+    }
+  
+    .PurposeHeading p {
+      padding: 0 20px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .cardSection {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    .PurposeHeading h3 {
+      font-size: 24px;
+    }
+  
+    .cardSection h3 {
+      font-size: 20px;
+    }
+  
+    .cardSection h4 {
+      font-size: 14px;
+    }
+  
+    .cardSection p {
+      font-size: 13px;
+    }
+  }
+  
+  /* Extra small devices */
+  @media (max-width: 480px) {
+    .PurposeImg {
+      width: 50px;
+      height: 50px;
+      padding: 6px;
+    }
+  
+    .cardSection {
+      padding: 20px 15px;
+    }
+  
+    .PurposeHeading h3 {
+      font-size: 20px;
+    }
+  
+    .PurposeHeading p {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+  

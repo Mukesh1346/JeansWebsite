@@ -3,6 +3,13 @@ import './productpage.css';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import img1 from '@/app/Images/j1.jpg'
+import img2 from '@/app/Images/j2.jpg'
+import img3 from '@/app/Images/j3.jpg'
+import img4 from '@/app/Images/j4.jpg'
+import img5 from '@/app/Images/j5.jpg'
+import img6 from '@/app/Images/j6.jpg'
+
 
 const dummyProducts = [
   {
@@ -10,56 +17,56 @@ const dummyProducts = [
     title: 'Classic T-Shirt',
     desc: 'High-quality cotton jeans',
     price: 1029,
-    image: '/j1.jpg',
+    image: img1 ,
   },
   {
     id: 2,
     title: 'Summer Shirt',
     desc: 'Light and breezy ',
     price: 945,
-    image: '/j2.jpg',
+    image: img2,
   },
   {
     id: 3,
     title: 'Denim Jacket',
     desc: 'Stylish and warm',
     price: 1289,
-    image:'/j4.jpg',
+    image: img3,
   },
   {
     id: 4,
     title: 'Denim Jacket',
     desc: 'Perfect for all weather.',
     price: 1289,
-    image:'/j5.jpg',
+    image: img4,
   },
   {
     id: 5,
     title: 'Denim Jacket',
     desc: 'Durable jeans with perfect size',
     price: 1289,
-    image:'/j6.jpg',
+    image: img5,
   },
   {
     id: 6,
     title: 'Denim Jacket',
     desc: 'Durable jeans with perfect size',
     price: 1289,
-    image:'/j3.jpg',
+    image: img6,
   },
   {
     id: 7,
     title: 'Denim Jacket',
     desc: 'Durable jeans with perfect size',
     price: 1289,
-    image:'/j2.jpg',
+    image: img1,
   },
   {
     id: 8,
     title: 'Denim Jacket',
     desc: 'Durable jeans with perfect size',
     price: 1289,
-    image:'/j1.jpg',
+    image: img2,
   }
 ];
 
@@ -74,7 +81,7 @@ export default function ProductPage() {
         <div className="productsWrapper">
           {dummyProducts.map((product, index) => (
             <Link className="text-decoration-none" href={`Pages/product-details/${index}`} key={index}>
-              <div className="product">
+              <div className="product ">
                 <figure>
                   <Image
                     src={product.image}

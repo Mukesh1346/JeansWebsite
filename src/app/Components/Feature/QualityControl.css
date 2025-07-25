@@ -1,0 +1,49 @@
+.quality-control-section {
+    background: url('/images/bg-fabric.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .quality-title {
+    color: #1891c8;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .quality-desc {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 17px;
+    color: #222;
+  }
+  
+  .diamond-box {
+    width: 130px;
+    height: 130px;
+    background-color:#1891c8;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    position: relative;
+    border: 2px dotted #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .diamond-content {
+    transform: rotate(-45deg);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .diamond-content img {
+    margin-bottom: 5px;
+  }
+  
+  .diamond-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+  

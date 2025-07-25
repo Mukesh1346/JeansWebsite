@@ -7,7 +7,7 @@ import Pic1 from '@/app/Images/jeans.png'
 import Pic2 from '@/app/Images/instagram.png'
 import Pic3 from '@/app/Images/twitter.png'
 import Pic4 from '@/app/Images/youtube.png'
-import Pic5 from '@/app/Images/logo.png'
+// import Pic5 from '@/app/Images/logo.png'
 import { motion, useInView } from 'framer-motion';
 
 export default function Header() {
@@ -65,7 +65,7 @@ export default function Header() {
                   <Link href="https://m.youtube.com/@AnibhaviCreations">
                     <Image src={Pic4} className="me-4 mt-2" alt="Youtube" width={40} height={40} />
                   </Link>
-                  <Image    src={Pic5} className="me-4 mt-2" alt="insta" width={70} height={40} />
+                  {/* <Image    src={Pic5} className="me-4 mt-2" alt="insta" width={70} height={40} /> */}
                 </div>
               </div>
             </div>

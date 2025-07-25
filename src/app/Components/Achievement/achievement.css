@@ -1,0 +1,23 @@
+.AchievementImgSec img{
+    width: 100%;
+}
+
+.highlightText{
+    color: #1891c8;
+    font-size: 25px;
+    font-weight: 800;
+}
+.AchievementTitle h3{
+    text-align: center;
+       
+}
+.AchievementRightSec{
+    padding:50px;
+}
+.AchievementSubTitle{
+    margin-top: 30px;
+    text-align: justify;
+}
+.AchievementList{
+    display: flex;
+}

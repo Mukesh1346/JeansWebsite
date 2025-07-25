@@ -1,8 +1,13 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import './unique.css';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import pic1 from '@/app/Images/j6.jpg'
+import pic2 from '@/app/Images/j4.jpg'
+import pic3 from '@/app/Images/j5.jpg'
+import FranchiseModal from '../PopModal/Popup';
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,6 +30,7 @@ const itemVariants = {
 };
 
 export default function Unique() {
+  const [show, setShow] = useState(false);
   return (
    <>
    <section  id="Unique">
@@ -36,15 +42,15 @@ export default function Unique() {
     >
       <motion.div className="image-grid" variants={containerVariants}>
         <motion.div className="img-block large" variants={itemVariants}>
-          <Image src="/j6.jpg" className='uniqueImg' alt="Main Design" width={400} height={430} />
+          <Image src={pic1} className='uniqueImg' alt="Main Design" width={400} height={430} />
         </motion.div>
 
         <motion.div className="img-block small" variants={itemVariants}>
-          <Image src="/j4.jpg" alt="Lamp Room" className='uniqueImg' width={250} height={200} />
+          <Image src={pic2} alt="Lamp Room" className='uniqueImg' width={250} height={200} />
         </motion.div>
 
         <motion.div className="img-block medium" variants={itemVariants}>
-          <Image src="/j5.jpg" alt="Stool" className='uniqueImg' width={250} height={200} />
+          <Image src={pic3} alt="Stool" className='uniqueImg' width={250} height={200} />
         </motion.div>
       </motion.div>
 
@@ -74,9 +80,11 @@ export default function Unique() {
           variants={itemVariants}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={()=> setShow(true)}
         >
           Explore
         </motion.button>
+        {show && <FranchiseModal onClose={() => setShow(false)} />}
       </motion.div>
     </motion.div>
    </section>

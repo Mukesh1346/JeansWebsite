@@ -1,25 +1,14 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-// import { useParams } from 'next/navigation';
-import axios from 'axios'
+
 import Image from 'next/image';
 import './ProductDetail.css';
 
 export default function ProductDetailPage() {
-  // const { id } = useParams(); 
+
   let [ProductDetail, setProductDetail] = useState([]);
 
-  // function showProductData() {
-  //   axios.get("https://api.escuelajs.co/api/v1/products")
-  //     .then(res => {
-  //       console.log(res.data)
-  //       setProductDetail(res.data)
-  //     })
-  //     .catch(err => {
-  //       console.log("Error Fetching Products : ", err);
-  //     })
-  // }
   useEffect(() => {
     showProductData()
   }, [])

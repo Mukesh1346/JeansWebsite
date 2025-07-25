@@ -10,6 +10,10 @@ import ProductPage from "./Components/Products/Products";
 import Unique from "./Components/Unique/page";
 import AppSection from "./Components/AppSection/AppSection";
 import Testimonial from "./Components/Testimonial/Testimonial";
+import Purpose from "./Components/Purpose/Purpose";
+import Achievement from "./Components/Achievement/Achievement";
+import Feature from '@/app/Components/Feature/Feature'
+import LatestVideos from '@/app/Components/LatestVideos/LatestVideos'
 
 export default function Home() {
   return (
@@ -19,15 +23,18 @@ export default function Home() {
       <LatestProducts />
       <Header/>
       <Explore />
+   <Achievement/>
       {/* <QualitySection/> */}
+      <Feature/>
      <Discount />
       <ProductPage />
     <Unique />
         <AppSection />
      <LatestProducts />
          <Testimonial /> 
+         <Purpose/>
 
-
+  <LatestVideos/>
 
 
 
